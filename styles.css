@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@100;100&display=swap');
+
+div{
+    font-family: 'Work Sans',Arial,sans-serif;
+}
+
+
+div div div{
+    border: 0px dotted blue;
+    margin: 0px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.centered  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 10% 20% 70%;
+    
+}
+
+.nav-link{
+    font-family: Roboto,Arial,sans-serif;
+    color: #ababab
+}
+.nav-link:hover{
+ color: #00b39b;
+}
+
+
