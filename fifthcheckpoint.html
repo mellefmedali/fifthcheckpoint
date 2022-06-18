@@ -14,60 +14,65 @@
         crossorigin="anonymous">
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- link for font-awesome -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="styles.css" >
    
     
     </head>
 
     <body>
-        <!-- this is the nav bar CLOSED-->
-        <nav class="navbar navbar-expand-sm  sticky-top" style="background-color: white ;">
+        <!-- this is the navbar__________________________CLOSED____-->
+        <nav class="navbar navbar-expand-sm  fixed-top" style="background-color: white ; height: 70px;">
             <div class="container-fluid" >
-                        <a class="navbar-brand col-sm-6" margin="20px" href="https://www.docplanner.com/"><img src="./data/logo-with-text.svg" width="268px" height="68px" alt="logo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse"  id="collapsibleNavbar" style="justify-content: right;" >
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./fifthcheckpoint.html" >About us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" >Career</a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" style=" margin-right:120px ;" >Departments</a>
-                                    <ul class="dropdown-menu" >
-                                        <li><a class="dropdown-item" href="#">Marketing & PR</a></li>
-                                        <li><a class="dropdown-item" href="#">Customer Success & Sales</a></li>
-                                        <li><a class="dropdown-item" href="#">IT, Product, Data</a></li>
-                                        <li><a class="dropdown-item" href="#">Finance & Administration</a></li>
-                                        <li><a class="dropdown-item" href="#">HR & more</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                    <a class="navbar-brand col-sm-7"   href="https://www.docplanner.com/"><img src="./data/logo-with-text.svg" width="268px" height="50px" alt="logo"></a>
+                   
+                    <div class="navbar-collapse col-sm-4"  id="collapsibleNavbar">
+                            <div class="navigation-bar">
+                                <div class="nav-item">
+                                    <a class="nav-link " href="./fifthcheckpoint.html" >About us</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a class="nav-link " href="#" >Career</a>
+                                </div>
+                                <div class="nav-item dropdown ">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" style=" margin-right:10px;" >Departments</a>
+                                    
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Marketing & PR</a></li>
+                                            <li><a class="dropdown-item" href="#">Customer Success & Sales</a></li>
+                                            <li><a class="dropdown-item" href="#">IT, Product, Data</a></li>
+                                            <li><a class="dropdown-item" href="#">Finance & Administration</a></li>
+                                            <li><a class="dropdown-item" href="#">HR & more</a></li>
+                                        </ul>
+                                    
+                                </div>
+
+                                
+                            </div>
+                    </div>
             </div>
           </nav>
 
         <!-- 1st section "Makin the healthcare" -->
-        <section   >
-            <div class="grid-container">
-                <div class="centered" style="grid-column: 1/3; grid-row:1/2 ;">
-                    <img src="./data/logo2.png" alt="logo" width="40px" height="40px">
+        <section  >
+            <div class="grid-container " >
+                <div class="centered logo-b-nav" style="grid-row:1/2 ;grid-column: 1/3; ">
+                    <img src="./data/logo2.png" alt="logo" width="40px" height="40px" >
                 </div>
-                <div class="centered" style="grid-column: 1/3; grid-row:2/3 ;">
+                <div class="centered" style="grid-row:2/3 ;grid-column: 1/3; ">
                     <h1 style="color:#00C0A6 ;">Making the healthcare experience more human</h1>
                 </div>
             
-                <div style="grid-column: 1/2; grid-row:3/4 ;padding:5px;margin: 10%;">
+                <div class="c1" >
                     <p>We want patients to find the perfect doctor and book an appointment 
                         in the most easy way. The patient journey should be enjoyable, and 
                         that's why we are always next to them: 
                         to help them find the best possible care. Anytime, anywhere.
                     </p>
                 </div>
-                <div style="grid-column: 2/3; grid-row:3/4 ; padding:5px; margin: 10%;">
+                <div class="c2" >
                     <p>
                         We also help doctors to better manage their practice and build their
                         online reputation. With our integrated end-to-end solution, doctors

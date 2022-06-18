@@ -1,41 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@100;100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@50;350&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+/* for all the project________________________________________________ */
 div{
     font-family: 'Work Sans',Arial,sans-serif;
 }
 
-
-div div div{
-    border: 0px dotted blue;
-    margin: 0px;
+::selection{
+    color: white;
+    background-color: #00b39b;
 }
 
-.dropdown:hover .dropdown-menu{
+/* for navbar ___________________________________________________________________ */
+.nav-link{
+    font-family: 'Roboto',Arial,sans-serif;
+    font-size: 14px;
+    color: #ababab;
+    padding: 5px;
+    margin-top: 0;
+    
+}
+
+.nav-link:hover{
+ color: #00b39b;
+ 
+}
+
+#collapsibleNavbar{
+    display: flex;
+    justify-content: right;
+    background-color:white;
+    }
+
+.container-fluid{
+    box-shadow: 0 3px 3px 0 #d3cfc9;
+    }
+
+.navigation-bar{
+    display: grid;
+    grid-template-columns: 70px auto auto;
+    grid-template-rows: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+.dropdown:hover .dropdown-menu {
     display:block;
+    background-color: white;
 }
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    width: 220px;
+    margin-left: -140px;
+    padding: 0px;
+    background-color: blue;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    border-radius: 0px; 
+    border-color: white;   
+}
+
+/* for the first section _________________________________________________________ */
 
 .centered  {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: auto
+}
 
+
+.logo-b-nav{
+    padding-top: 100px;
 }
 
 .grid-container{
     display: grid;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 10% 20% 70%;
+    
+
+}
+
+.c1{
+    grid-row: 3/4;
+    grid-column: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.c2{
+    grid-row: 3/4;
+    grid-column: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 577px) {
+.grid-container{
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100% ;
     
 }
-
-.nav-link{
-    font-family: Roboto,Arial,sans-serif;
-    color: #ababab
+        .c1{
+            grid-row:3/4 ;
+            grid-column: 100%;
+            margin: 1px;
+            padding: auto;   
+        }
+        .c2{
+            
+             grid-row:4/5 ; 
+             grid-column: 100%;
+             margin: 1px; 
+             padding: auto;
+            
+        }
 }
-.nav-link:hover{
- color: #00b39b;
-}
 
 
+  
