@@ -3,41 +3,61 @@
 
 
 /* for all the project________________________________________________ */
-div{
-    font-family: 'Work Sans',Arial,sans-serif;
+div , section{
+    font-family: 'Work Sans', Arial, sans-serif;
 }
 
-::selection{
+::selection {
     color: white;
     background-color: #00b39b;
 }
 
+
 /* for navbar ___________________________________________________________________ */
-.nav-link{
-    font-family: 'Roboto',Arial,sans-serif;
+.navbar-expand-md{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    box-shadow: 1px 1px 6px #d3cfc9;
+}
+
+
+.nav-link {
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 14px;
     color: #ababab;
     padding: 5px;
+    width: 100%;
     margin-top: 0;
-    
+
+
 }
 
-.nav-link:hover{
- color: #00b39b;
- 
+.nav-link:hover {
+    color: #00b39b;
+
 }
 
-#collapsibleNavbar{
+#collapsibleNavbar {
     display: flex;
     justify-content: right;
-    background-color:white;
-    }
+    background-color: white;
+}
 
-.container-fluid{
-    box-shadow: 0 3px 3px 0 #d3cfc9;
-    }
 
-.navigation-bar{
+
+.container-fluid {
+   
+    zoom: 1;
+    max-width: 1015px;
+    
+    padding: 0 auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navigation-bar {
     display: grid;
     grid-template-columns: 70px auto auto;
     grid-template-rows: 30px;
@@ -46,10 +66,11 @@ div{
 }
 
 .dropdown:hover .dropdown-menu {
-    display:block;
+    display: block;
     background-color: white;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: none;
     position: absolute;
     width: 220px;
@@ -57,68 +78,480 @@ div{
     padding: 0px;
     background-color: blue;
     box-shadow: 0 5px 10px 0 #d3cfc9;
-    border-radius: 0px; 
-    border-color: white;   
+    border-radius: 0px;
+    border-color: white;
 }
 
-/* for the first section _________________________________________________________ */
 
-.centered  {
+/* for the first section _________________________________________________________ */
+section {
+    max-width: 1015px;
+    /* padding: 0 20px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.centered {
     display: flex;
-    align-items: center;
+    align-items: space-between;
     justify-content: center;
     text-align: center;
     padding: auto
 }
 
-
-.logo-b-nav{
-    padding-top: 100px;
+.logo-b-nav {
+    padding-top: 110px;
+    padding-bottom: 30px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 50% 50% ;
-    
+    grid-template-columns: 50% 50%;
+
 
 }
 
-.c1{
+.c1 {
     grid-row: 3/4;
     grid-column: 50%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 90px;
 }
 
-.c2{
+.c2 {
     grid-row: 3/4;
     grid-column: 50%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 50px;
 }
 
 @media screen and (max-width: 577px) {
-.grid-container{
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 100% ;
-    
+    .grid-container {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 100%;
+
+    }
+
+    .c1 {
+        grid-row: 3/4;
+        grid-column: 100%;
+        margin: 1px;
+        padding: 20px;
+    }
+
+    .c2 {
+
+        grid-row: 4/5;
+        grid-column: 100%;
+        margin: 1px;
+        padding: 20px;
+
+    }
+
+
 }
-        .c1{
-            grid-row:3/4 ;
-            grid-column: 100%;
-            margin: 1px;
-            padding: auto;   
-        }
-        .c2{
-            
-             grid-row:4/5 ; 
-             grid-column: 100%;
-             margin: 1px; 
-             padding: auto;
-            
-        }
+
+/* CSS second section_________________________________________ */
+.container-section-2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+h5 {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.section-2-commun {
+    align-content: flex-start;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.patient {
+    background-color: #00b39b;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.doctor {
+    background-color: #3d83df;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.clinic {
+    background-color: #1b2734;
+    grid-row: 1/2;
+}
+
+.dropdown-list {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+    text-decoration: underline;
+    padding: auto;
+    width: 90%;
+}
+
+option {
+    color: grey;
+}
+
+@media screen and (max-width: 577px) {
+
+
+
+    .container-section-2 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        justify-content: space-around;
+    }
+
+
+
+    .patient {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .doctor {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .clinic {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+}
+
+/* ______________SLOGANS________________________ */
+
+.container-slogan-assos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+    margin: 40px auto;
+}
+
+.slogan {
+    color: #00b39b;
+    grid-column: 1/2;
+    font-size: 26px;
+}
+
+.logo-associated {
+    grid-column: 2/3;
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-slogan-assos {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto auto;
+        
+    }
+
+    .slogan div {
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo-associated {
+        margin: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/* -------------------section 4 -------------------------------------------- */
+
+@media screen and (min-width: 890px) {
+
+    .back-gr {
+        background-image: url("./data/arriere-plan-section4.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+    }
+
+    .sect4 {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+
+
+    .sect4-P {
+        grid-area: 1/1/3/2;
+    }
+
+
+    .sect4-title {
+        color: #00b39b;
+        font-size: 30px;
+    }
+
+    [class^="sect4-num"] {
+        background-color: white;
+        margin: 10px;
+        padding: 5px;
+        font-size: 9px;
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    .sect-t {
+        color: #00b39b;
+        font-size: 26px;
+    }
+
+    .sect4-num1 {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .sect4-num3 {
+        margin-bottom: -20px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 890px ) {
+
+
+    .sect4 {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-image: url("./data/arriere-plan-section4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+    }
+
+    .sect4-P {
+        grid-area: 1/1/2/3;
+        grid-row: auto;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        max-width: 415px;
+        
+    }
+
+
+    .sect4-title {
+        color: #00b39b;
+        font-size: 30px;
+    }
+
+    [class^="sect4-num"] {
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        justify-content: top;
+        margin: 10px;
+        font-size: small;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .sect-t {
+        color: #00b39b;
+        font-size: 26px;
+    }
+
+    .sect4-num1 {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .sect4-num3 {
+        margin-top: 40px;
+        margin-bottom: -20px;
+
+    }
+}
+
+@media screen and (max-width: 500px ) {
+
+
+    .sect4 {
+        display: grid;
+        grid-template-columns: auto;
+        background-image: url("./data/arriere-plan-section4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+    }
+
+    .sect4-P {
+        grid-area: 1/1/2/2;
+        grid-row: auto;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        
+    }
+
+
+    .sect4-title {
+        color: #00b39b;
+        font-size: 30px;
+    }
+
+    [class^="sect4-num"] {
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        align-items: center;
+        margin: auto;
+        font-size: small;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .sect-t {
+        color: #00b39b;
+        font-size: 26px;
+    }
+
+    .sect4-num1 {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .sect4-num3 {
+        margin-bottom: -20px;
+        margin-top: 30px;
+        
+    }
+
 }
 
 
-  
+/* -------------------section 5 -------------------------------------------- */
+.sect5-head {
+    text-align: center;
+}
+
+.sect5-detail {
+    text-align: center;
+}
+@media screen and (min-width: 1015px) {
+    .photo-list {
+        margin: auto;
+        display: grid;
+        max-width: 1205px;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    .photo-list {
+        display: grid;
+        max-width: max-content;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .photo-list {
+        display: grid;
+        max-width: max-content;
+        grid-template-columns: auto;
+    }
+}
+
+.photo-list-com img {
+    display: block;
+    border-radius: 10px;
+    margin: auto auto 15px;
+}
+
+.photo-list-com {
+    background-color: inherit;
+    margin: 10px;
+}
+
+.photo-list-com:hover {
+    box-shadow: 0 5px 20px rgb(198, 206, 209), 5px 0 20px lightblue;
+}
+
+.annotation {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #3d83df;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+}
+
+
+/* ----------------------- join US -------------- */
+
+.join-us{
+    margin: 40px auto;
+    text-align: center;
+}
+
+.join-us p{
+    font-size: 35px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    color: #333;
+    margin-bottom: .75em;
+}
+
+.join-us button{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+
+/* ___________ footer _______________ */
+.footer{
+    margin: 20px;
+    font-size: 12px;
+    font-family: 'Roboto',Arial,sans-serif;
+    color: #ababab;
+    text-align: center;
+}
